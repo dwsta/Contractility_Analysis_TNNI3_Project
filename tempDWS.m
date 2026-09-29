@@ -1,0 +1,14 @@
+clear all;
+fname = 'F:\Playaround_0407data\contractility_run_20240121_170445\output\CyanEx\tfm\traction_stresses.bin';
+[X,Y,T,U,V,xdrift,ydrift] = readPIV_bin(fname);
+xshift = median(xdrift);
+yshift = median(ydrift);
+X = X + xshift;
+Y = Y + yshift;
+xvec = unique(X(:));
+yvec = unique(Y(:));
+tvec = unique(T(:));
+U = U;
+V = V;
+%                 app.Data(idata).MAG = sqrt(U.^2+V.^2);
+[X2,Y2] = meshgrid(xvec,yvec);

@@ -1,0 +1,14 @@
+{
+  "Performance": {
+    "MaxRAM": 5,
+    "UseGPU": true,
+    "MaxGPUMem": 2
+  },
+  "SingleCell": {
+    "UseCellpose": 0,
+    "CellposeEnvActivate": "conda activate cellpose",
+    "CellposePythonCall": "python -m cellpose",
+    "CellposeModel": "C:\\Users\\rik_y\\.cellpose\\models\\CP_20230729_151950",
+    "CellposeOtherArgs": " --diameter 138.19 --flow_threshold 0.4 --use_gpu --save_png --save_outline --chan 0 --verbose"
+  }
+}
